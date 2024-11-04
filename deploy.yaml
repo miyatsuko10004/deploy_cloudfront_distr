@@ -4,16 +4,15 @@ Description: 'Multi-domain Web Infrastructure with existing ALB, CloudFront and 
 Parameters:
   DomainName:
     Type: String
-    Description: ドメイン名 (e.g., example.com)
+    Description: "Doamin Name (e.g., example.com)"
   
   HostedZoneId:
     Type: String
-    Description: Route 53 Hosted Zone ID
-
+    Description: "Route 53 Hosted Zone ID"
+  
   ExistingALBDNSName:
     Type: String
-    Default: 
-    Description: ALBドメイン名
+    Description: "ALB domain Name"
 
 Resources:
   Certificate:
@@ -115,3 +114,4 @@ Outputs:
   CertificateArn:
     Description: ARN of the created certificate
     Value: !Ref Certificate
+    
