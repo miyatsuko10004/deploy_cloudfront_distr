@@ -1,0 +1,1 @@
+CloudFormationを利用してALB - EC2の構成のWEBサイトにCDNを導入する
